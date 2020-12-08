@@ -11,13 +11,10 @@
 	
 </div>
 
-<script type="text/javascript">
-	var audioElement = document.createElement('audio');
-audioElement.setAttribute('src', 'https://loosebuster.netlify.app/music.mp3');
-audioElement.load();
-audioElement.addEventListener("load", function() { 
-  audioElement.play(); 
-}, true);
-</script>
+<iframe src="https://loosebuster.netlify.app/music.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+<audio autoplay>
+<source src="https://loosebuster.netlify.app/music.mp3" type="audio/mp3">
+</audio>
+
 </body>
 </html>
